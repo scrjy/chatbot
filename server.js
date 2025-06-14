@@ -17,7 +17,8 @@ app.use('/api/chat', chatRoutes)
 const GOOGLE_CLIENT_ID =
   '670597003725-jq6jaa85oeojos02kcdkta5ghtj99e7i.apps.googleusercontent.com'
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET
-const GOOGLE_REDIRECT_URI = 'chatbot-eight-beta-31.vercel.app'
+const GOOGLE_REDIRECT_URI =
+  'https://chatbot-eight-beta-31.vercel.app/auth/google/callback'
 
 const oauth2Client = new OAuth2Client(
   GOOGLE_CLIENT_ID,
