@@ -42,8 +42,7 @@ function LoginForm() {
   const handleGitHubLogin = () => {
     console.log('GitHub 로그인 시작')
     const clientId = 'Ov23li5L5MWwr3CjBDO5'
-    const redirectUri =
-      'https://chatbot-eight-beta-31.vercel.app/auth/github/callback'
+    const redirectUri = 'https://chatbot-eight-beta-31.vercel.app'
     const scope = 'read:user'
     const authUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`
     console.log('GitHub 인증 URL:', authUrl)
@@ -54,8 +53,7 @@ function LoginForm() {
     console.log('Google 로그인 시작')
     const clientId =
       '670597003725-jq6jaa85oeojos02kcdkta5ghtj99e7i.apps.googleusercontent.com'
-    const redirectUri =
-      'https://chatbot-eight-beta-31.vercel.app/auth/google/callback'
+    const redirectUri = 'https://chatbot-eight-beta-31.vercel.app'
     const scope =
       'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'
     const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${scope}&access_type=offline&prompt=consent`
